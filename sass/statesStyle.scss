@@ -1,0 +1,189 @@
+$color_1: #FFDF01;
+$color_2: #FFFFFF;
+$color_3: #E23028;
+$font_family_1: Montserrat;
+$font_family_2: Lato;
+$font_family_3: 'Roboto',
+sans-serif;
+$navbar_color: #1c2541;
+$background_color_1: #0b132b;
+$background_color_2: #3bb78f;
+$head_text_color: #FFDF01;
+$table_body_background: #0b132b;
+$table_row_background: #0b132b;
+$footer_background: #3a506b;
+$footer-link-color: #FFDF01;
+$copyright_background: #1c2541;
+$footer_link_hover: #89ff89;
+$social_link_color: #FFDF01;
+$confirm-color: #A0D2E7;
+$active-color: #FF4C4C;
+$recovered-color: #7FEB45;
+$death-color: #CCCCCC;
+$copyright-color: #fff;
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+.navbar {
+    .navbar-brand {
+
+        .head-text {
+            font-family: $font_family_1 !important;
+            font-size: 1.5rem;
+            color: $head_text_color;
+        }
+
+    }
+}
+
+nav {
+    background-color: $navbar_color !important;
+
+    .navbar-nav {
+
+        .nav-item {
+            .nav-link {
+                color: $color_1 !important;
+
+                &:active {
+                    color: $color_2 !important;
+                }
+
+                &:hover {
+                    filter: brightness(0.8);
+                    -webkit-filter: brightness(0.8);
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav {
+    .navbar-nav {
+        .nav-item {
+            .nav-text {
+                text-transform: uppercase;
+                font-family: $font_family_2 !important;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.card-chart {
+    background-color: $background_color_1;
+}
+
+.table {
+    font-family: $font_family_3;
+
+    tbody {
+
+        background-color: $table_body_background;
+    }
+
+    tr {
+        background-color: $table_row_background;
+
+    }
+}
+
+.container-cus {
+    background-color: $background_color_1;
+
+    .counter-con {
+        color: $confirm-color !important;
+    }
+
+    .counter-act {
+        color: $active-color !important;
+    }
+
+    .counter-rec {
+        color: $recovered-color !important;
+    }
+
+    .counter-dec {
+        color: $death-color !important;
+    }
+}
+
+
+.banner-text {
+    color: $color_3;
+}
+
+.footer-cus {
+    background-color: $footer_background !important;
+
+    .social-link {
+        cursor: pointer;
+        color: $social_link_color;
+
+        &:hover {
+            filter: brightness(0.8);
+            -webkit-filter: brightness(0.8);
+        }
+    }
+
+    .copyright-cus {
+        background-color: $copyright_background !important;
+        color: $copyright-color;
+        font-family: $font_family_2;
+
+        .footer-link {
+            text-decoration: none;
+            color: $footer-link-color;
+
+            &:hover {
+                color: $footer_link_hover;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+
+    nav {
+        a {
+            .head-text {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:1500px) {
+    .nav-cus {
+        height: 100px;
+    }
+}

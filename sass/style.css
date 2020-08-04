@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+.navbar .navbar-brand .head-text {
+  font-family: Montserrat !important;
+  font-size: 1.5rem;
+  color: #FFDF01;
+}
+
+nav {
+  background-color: #1c2541 !important;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  color: #FFDF01 !important;
+}
+
+nav .navbar-nav .nav-item .nav-link:active {
+  color: #FFFFFF !important;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav .navbar-nav .nav-item .nav-text {
+  text-transform: uppercase;
+  font-family: Lato !important;
+  font-size: 1.2rem;
+}
+
+.card-chart {
+  background-color: #0b132b;
+}
+
+.table tbody {
+  font-family: "Roboto", sans-serif;
+  background-color: #0b132b;
+}
+
+.table tbody tr {
+  background-color: #0b132b;
+}
+
+.container-cus {
+  background-color: #0b132b;
+}
+
+.container-cus .counter-con {
+  color: #A0D2E7 !important;
+}
+
+.container-cus .counter-act {
+  color: #FF4C4C !important;
+}
+
+.container-cus .counter-rec {
+  color: #7FEB45 !important;
+}
+
+.container-cus .counter-dec {
+  color: #CCCCCC !important;
+}
+
+.banner-text {
+  color: #E23028;
+}
+
+.footer-cus {
+  background-color: #3a506b !important;
+}
+
+.footer-cus .social-link {
+  cursor: pointer;
+  color: #FFDF01;
+}
+
+.footer-cus .social-link:hover {
+  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+}
+
+.footer-cus .copyright-cus {
+  background-color: #1c2541 !important;
+  color: #fff;
+}
+
+.footer-cus .copyright-cus .footer-link {
+  text-decoration: none;
+  color: #FFDF01;
+}
+
+.footer-cus .copyright-cus .footer-link:hover {
+  color: #89ff89;
+}
+
+@media (max-width: 480px) {
+  nav a .head-text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .nav-cus {
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
