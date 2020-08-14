@@ -52,16 +52,16 @@ function delhi() {
             return resp.json();
         })
         .then(function (data) {
-            let delCon = data.statewise[3].confirmed;
+            let delCon = data.statewise[5].confirmed;
             document.getElementById('delCon').innerHTML = delCon;
 
-            let delAct = data.statewise[3].active;
+            let delAct = data.statewise[5].active;
             document.getElementById('delAct').innerHTML = delAct;
 
-            let delRec = data.statewise[3].recovered;
+            let delRec = data.statewise[5].recovered;
             document.getElementById('delRec').innerHTML = delRec;
 
-            let delDec = data.statewise[3].deaths;
+            let delDec = data.statewise[5].deaths;
             document.getElementById('delDec').innerHTML = delDec;
 
         })
@@ -100,16 +100,16 @@ function ap() {
             return resp.json();
         })
         .then(function (data) {
-            let apCon = data.statewise[5].confirmed;
+            let apCon = data.statewise[3].confirmed;
             document.getElementById('apCon').innerHTML = apCon;
 
-            let apAct = data.statewise[5].active;
+            let apAct = data.statewise[3].active;
             document.getElementById('apAct').innerHTML = apAct;
 
-            let apRec = data.statewise[5].recovered;
+            let apRec = data.statewise[3].recovered;
             document.getElementById('apRec').innerHTML = apRec;
 
-            let apDec = data.statewise[5].deaths;
+            let apDec = data.statewise[3].deaths;
             document.getElementById('apDec').innerHTML = apDec;
 
         })
@@ -151,16 +151,16 @@ function gujarat() {
         })
         .then(function (data) {
 
-            let gujAct = data.statewise[7].active;
+            let gujAct = data.statewise[10].active;
             document.getElementById('gujAct').innerHTML = gujAct;
 
-            let gujCon = data.statewise[7].confirmed;
+            let gujCon = data.statewise[10].confirmed;
             document.getElementById('gujCon').innerHTML = gujCon;
 
-            let gujRec = data.statewise[7].recovered;
+            let gujRec = data.statewise[10].recovered;
             document.getElementById('gujRec').innerHTML = gujRec;
 
-            let gujDec = data.statewise[7].deaths;
+            let gujDec = data.statewise[10].deaths;
             document.getElementById('gujDec').innerHTML = gujDec;
 
         })
@@ -176,16 +176,16 @@ function wb() {
         })
         .then(function (data) {
 
-            let wbAct = data.statewise[8].active;
+            let wbAct = data.statewise[7].active;
             document.getElementById('wbAct').innerHTML = wbAct;
 
-            let wbCon = data.statewise[8].confirmed;
+            let wbCon = data.statewise[7].confirmed;
             document.getElementById('wbCon').innerHTML = wbCon;
 
-            let wbRec = data.statewise[8].recovered;
+            let wbRec = data.statewise[7].recovered;
             document.getElementById('wbRec').innerHTML = wbRec;
 
-            let wbDec = data.statewise[8].deaths;
+            let wbDec = data.statewise[7].deaths;
             document.getElementById('wbDec').innerHTML = wbDec;
 
         })
@@ -226,16 +226,16 @@ function rajasthan() {
         })
         .then(function (data) {
 
-            let rajAct = data.statewise[10].active;
+            let rajAct = data.statewise[12].active;
             document.getElementById('rajAct').innerHTML = rajAct;
 
-            let rajCon = data.statewise[10].confirmed;
+            let rajCon = data.statewise[12].confirmed;
             document.getElementById('rajCon').innerHTML = rajCon;
 
-            let rajRec = data.statewise[10].recovered;
+            let rajRec = data.statewise[12].recovered;
             document.getElementById('rajRec').innerHTML = rajRec;
 
-            let rajDec = data.statewise[10].deaths;
+            let rajDec = data.statewise[12].deaths;
             document.getElementById('rajDec').innerHTML = rajDec;
 
         })
@@ -251,16 +251,16 @@ function bihar() {
         })
         .then(function (data) {
 
-            let bihAct = data.statewise[11].active;
+            let bihAct = data.statewise[8].active;
             document.getElementById('bihAct').innerHTML = bihAct;
 
-            let bihCon = data.statewise[11].confirmed;
+            let bihCon = data.statewise[8].confirmed;
             document.getElementById('bihCon').innerHTML = bihCon;
 
-            let bihRec = data.statewise[11].recovered;
+            let bihRec = data.statewise[8].recovered;
             document.getElementById('bihRec').innerHTML = bihRec;
 
-            let bihDec = data.statewise[11].deaths;
+            let bihDec = data.statewise[8].deaths;
             document.getElementById('bihDec').innerHTML = bihDec;
 
         })
@@ -276,16 +276,16 @@ function haryana() {
         })
         .then(function (data) {
 
-            let harAct = data.statewise[12].active;
+            let harAct = data.statewise[14].active;
             document.getElementById('harAct').innerHTML = harAct;
 
-            let harCon = data.statewise[12].confirmed;
+            let harCon = data.statewise[14].confirmed;
             document.getElementById('harCon').innerHTML = harCon;
 
-            let harRec = data.statewise[12].recovered;
+            let harRec = data.statewise[14].recovered;
             document.getElementById('harRec').innerHTML = harRec;
 
-            let harDec = data.statewise[12].deaths;
+            let harDec = data.statewise[14].deaths;
             document.getElementById('harDec').innerHTML = harDec;
 
         })
@@ -301,16 +301,16 @@ function assam() {
         })
         .then(function (data) {
 
-            let assAct = data.statewise[13].active;
+            let assAct = data.statewise[11].active;
             document.getElementById('assAct').innerHTML = assAct;
 
-            let assCon = data.statewise[13].confirmed;
+            let assCon = data.statewise[11].confirmed;
             document.getElementById('assCon').innerHTML = assCon;
 
-            let assRec = data.statewise[13].recovered;
+            let assRec = data.statewise[11].recovered;
             document.getElementById('assRec').innerHTML = assRec;
 
-            let assDec = data.statewise[13].deaths;
+            let assDec = data.statewise[11].deaths;
             document.getElementById('assDec').innerHTML = assDec;
 
         })
@@ -326,16 +326,16 @@ function mp() {
         })
         .then(function (data) {
 
-            let mpAct = data.statewise[14].active;
+            let mpAct = data.statewise[15].active;
             document.getElementById('mpAct').innerHTML = mpAct;
 
-            let mpCon = data.statewise[14].confirmed;
+            let mpCon = data.statewise[15].confirmed;
             document.getElementById('mpCon').innerHTML = mpCon;
 
-            let mpRec = data.statewise[14].recovered;
+            let mpRec = data.statewise[15].recovered;
             document.getElementById('mpRec').innerHTML = mpRec;
 
-            let mpDec = data.statewise[14].deaths;
+            let mpDec = data.statewise[15].deaths;
             document.getElementById('mpDec').innerHTML = mpDec;
 
         })
@@ -351,16 +351,16 @@ function odisha() {
         })
         .then(function (data) {
 
-            let odiAct = data.statewise[15].active;
+            let odiAct = data.statewise[13].active;
             document.getElementById('odiAct').innerHTML = odiAct;
 
-            let odiCon = data.statewise[15].confirmed;
+            let odiCon = data.statewise[13].confirmed;
             document.getElementById('odiCon').innerHTML = odiCon;
 
-            let odiRec = data.statewise[15].recovered;
+            let odiRec = data.statewise[13].recovered;
             document.getElementById('odiRec').innerHTML = odiRec;
 
-            let odiDec = data.statewise[15].deaths;
+            let odiDec = data.statewise[13].deaths;
             document.getElementById('odiDec').innerHTML = odiDec;
 
         })
@@ -376,16 +376,16 @@ function jk() {
         })
         .then(function (data) {
 
-            let jkAct = data.statewise[16].active;
+            let jkAct = data.statewise[18].active;
             document.getElementById('jkAct').innerHTML = jkAct;
 
-            let jkCon = data.statewise[16].confirmed;
+            let jkCon = data.statewise[18].confirmed;
             document.getElementById('jkCon').innerHTML = jkCon;
 
-            let jkRec = data.statewise[16].recovered;
+            let jkRec = data.statewise[18].recovered;
             document.getElementById('jkRec').innerHTML = jkRec;
 
-            let jkDec = data.statewise[16].deaths;
+            let jkDec = data.statewise[18].deaths;
             document.getElementById('jkDec').innerHTML = jkDec;
 
         })
@@ -401,16 +401,16 @@ function kerala() {
         })
         .then(function (data) {
 
-            let kerAct = data.statewise[17].active;
+            let kerAct = data.statewise[16].active;
             document.getElementById('kerAct').innerHTML = kerAct;
 
-            let kerCon = data.statewise[17].confirmed;
+            let kerCon = data.statewise[16].confirmed;
             document.getElementById('kerCon').innerHTML = kerCon;
 
-            let kerRec = data.statewise[17].recovered;
+            let kerRec = data.statewise[16].recovered;
             document.getElementById('kerRec').innerHTML = kerRec;
 
-            let kerDec = data.statewise[17].deaths;
+            let kerDec = data.statewise[16].deaths;
             document.getElementById('kerDec').innerHTML = kerDec;
 
         })
@@ -426,16 +426,16 @@ function punjab() {
         })
         .then(function (data) {
 
-            let punAct = data.statewise[18].active;
+            let punAct = data.statewise[17].active;
             document.getElementById('punAct').innerHTML = punAct;
 
-            let punCon = data.statewise[18].confirmed;
+            let punCon = data.statewise[17].confirmed;
             document.getElementById('punCon').innerHTML = punCon;
 
-            let punRec = data.statewise[18].recovered;
+            let punRec = data.statewise[17].recovered;
             document.getElementById('punRec').innerHTML = punRec;
 
-            let punDec = data.statewise[18].deaths;
+            let punDec = data.statewise[17].deaths;
             document.getElementById('punDec').innerHTML = punDec;
 
         })
@@ -651,16 +651,16 @@ function ladakh() {
         })
         .then(function (data) {
 
-            let ladAct = data.statewise[27].active;
+            let ladAct = data.statewise[30].active;
             document.getElementById('ladAct').innerHTML = ladAct;
 
-            let ladCon = data.statewise[27].confirmed;
+            let ladCon = data.statewise[30].confirmed;
             document.getElementById('ladCon').innerHTML = ladCon;
 
-            let ladRec = data.statewise[27].recovered;
+            let ladRec = data.statewise[30].recovered;
             document.getElementById('ladRec').innerHTML = ladRec;
 
-            let ladDec = data.statewise[27].deaths;
+            let ladDec = data.statewise[30].deaths;
             document.getElementById('ladDec').innerHTML = ladDec;
 
         })
@@ -676,16 +676,16 @@ function nagaland() {
         })
         .then(function (data) {
 
-            let nagAct = data.statewise[28].active;
+            let nagAct = data.statewise[27].active;
             document.getElementById('nagAct').innerHTML = nagAct;
 
-            let nagCon = data.statewise[28].confirmed;
+            let nagCon = data.statewise[27].confirmed;
             document.getElementById('nagCon').innerHTML = nagCon;
 
-            let nagRec = data.statewise[28].recovered;
+            let nagRec = data.statewise[27].recovered;
             document.getElementById('nagRec').innerHTML = nagRec;
 
-            let nagDec = data.statewise[28].deaths;
+            let nagDec = data.statewise[27].deaths;
             document.getElementById('nagDec').innerHTML = nagDec;
 
         })
@@ -701,16 +701,16 @@ function ar() {
         })
         .then(function (data) {
 
-            let arAct = data.statewise[29].active;
+            let arAct = data.statewise[28].active;
             document.getElementById('arAct').innerHTML = arAct;
 
-            let arCon = data.statewise[29].confirmed;
+            let arCon = data.statewise[28].confirmed;
             document.getElementById('arCon').innerHTML = arCon;
 
-            let arRec = data.statewise[29].recovered;
+            let arRec = data.statewise[28].recovered;
             document.getElementById('arRec').innerHTML = arRec;
 
-            let arDec = data.statewise[29].deaths;
+            let arDec = data.statewise[28].deaths;
             document.getElementById('arDec').innerHTML = arDec;
 
         })
@@ -726,16 +726,16 @@ function chandigarh() {
         })
         .then(function (data) {
 
-            let chaAct = data.statewise[30].active;
+            let chaAct = data.statewise[31].active;
             document.getElementById('chaAct').innerHTML = chaAct;
 
-            let chaCon = data.statewise[30].confirmed;
+            let chaCon = data.statewise[31].confirmed;
             document.getElementById('chaCon').innerHTML = chaCon;
 
-            let chaRec = data.statewise[30].recovered;
+            let chaRec = data.statewise[31].recovered;
             document.getElementById('chaRec').innerHTML = chaRec;
 
-            let chaDec = data.statewise[30].deaths;
+            let chaDec = data.statewise[31].deaths;
             document.getElementById('chaDec').innerHTML = chaDec;
 
         })
@@ -751,16 +751,16 @@ function dn() {
         })
         .then(function (data) {
 
-            let dnAct = data.statewise[31].active;
+            let dnAct = data.statewise[32].active;
             document.getElementById('dnAct').innerHTML = dnAct;
 
-            let dnCon = data.statewise[31].confirmed;
+            let dnCon = data.statewise[32].confirmed;
             document.getElementById('dnCon').innerHTML = dnCon;
 
-            let dnRec = data.statewise[31].recovered;
+            let dnRec = data.statewise[32].recovered;
             document.getElementById('dnRec').innerHTML = dnRec;
 
-            let dnDec = data.statewise[31].deaths;
+            let dnDec = data.statewise[32].deaths;
             document.getElementById('dnDec').innerHTML = dnDec;
 
         })
@@ -776,16 +776,16 @@ function meghalaya() {
         })
         .then(function (data) {
 
-            let megAct = data.statewise[32].active;
+            let megAct = data.statewise[33].active;
             document.getElementById('megAct').innerHTML = megAct;
 
-            let megCon = data.statewise[32].confirmed;
+            let megCon = data.statewise[33].confirmed;
             document.getElementById('megCon').innerHTML = megCon;
 
-            let megRec = data.statewise[32].recovered;
+            let megRec = data.statewise[33].recovered;
             document.getElementById('megRec').innerHTML = megRec;
 
-            let megDec = data.statewise[32].deaths;
+            let megDec = data.statewise[33].deaths;
             document.getElementById('megDec').innerHTML = megDec;
 
         })
@@ -801,16 +801,16 @@ function sikkim() {
         })
         .then(function (data) {
 
-            let sikAct = data.statewise[33].active;
+            let sikAct = data.statewise[34].active;
             document.getElementById('sikAct').innerHTML = sikAct;
 
-            let sikCon = data.statewise[33].confirmed;
+            let sikCon = data.statewise[34].confirmed;
             document.getElementById('sikCon').innerHTML = sikCon;
 
-            let sikRec = data.statewise[33].recovered;
+            let sikRec = data.statewise[34].recovered;
             document.getElementById('sikRec').innerHTML = sikRec;
 
-            let sikDec = data.statewise[33].deaths;
+            let sikDec = data.statewise[34].deaths;
             document.getElementById('sikDec').innerHTML = sikDec;
 
         })
@@ -826,16 +826,16 @@ function mizoram() {
         })
         .then(function (data) {
 
-            let mizAct = data.statewise[34].active;
+            let mizAct = data.statewise[35].active;
             document.getElementById('mizAct').innerHTML = mizAct;
 
-            let mizCon = data.statewise[34].confirmed;
+            let mizCon = data.statewise[35].confirmed;
             document.getElementById('mizCon').innerHTML = mizCon;
 
-            let mizRec = data.statewise[34].recovered;
+            let mizRec = data.statewise[35].recovered;
             document.getElementById('mizRec').innerHTML = mizRec;
 
-            let mizDec = data.statewise[34].deaths;
+            let mizDec = data.statewise[35].deaths;
             document.getElementById('mizDec').innerHTML = mizDec;
 
         })
@@ -851,16 +851,16 @@ function an() {
         })
         .then(function (data) {
 
-            let anAct = data.statewise[35].active;
+            let anAct = data.statewise[29].active;
             document.getElementById('anAct').innerHTML = anAct;
 
-            let anCon = data.statewise[35].confirmed;
+            let anCon = data.statewise[29].confirmed;
             document.getElementById('anCon').innerHTML = anCon;
 
-            let anRec = data.statewise[35].recovered;
+            let anRec = data.statewise[29].recovered;
             document.getElementById('anRec').innerHTML = anRec;
 
-            let anDec = data.statewise[35].deaths;
+            let anDec = data.statewise[29].deaths;
             document.getElementById('anDec').innerHTML = anDec;
 
         })
