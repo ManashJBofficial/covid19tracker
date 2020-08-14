@@ -64,22 +64,22 @@ function delhi() {
             return resp.json();
         })
         .then(function (data) {
-            let delhiUpdate = data.statewise[3].lastupdatedtime;
+            let delhiUpdate = data.statewise[5].lastupdatedtime;
             document.getElementById('delhiUpdate').innerHTML = delhiUpdate;
 
-            let delhiState = data.statewise[3].state;
+            let delhiState = data.statewise[5].state;
             document.getElementById('delhiState').innerHTML = delhiState;
 
-            let delhiActive = data.statewise[3].active;
+            let delhiActive = data.statewise[5].active;
             document.getElementById('delhiActive').innerHTML = delhiActive;
 
-            let delhiConfirmed = data.statewise[3].confirmed;
+            let delhiConfirmed = data.statewise[5].confirmed;
             document.getElementById('delhiConfirmed').innerHTML = delhiConfirmed;
 
-            let delhiRecovered = data.statewise[3].recovered;
+            let delhiRecovered = data.statewise[5].recovered;
             document.getElementById('delhiRecovered').innerHTML = delhiRecovered;
 
-            let delhiDeceased = data.statewise[3].deaths;
+            let delhiDeceased = data.statewise[5].deaths;
             document.getElementById('delhiDeceased').innerHTML = delhiDeceased;
 
         })
@@ -125,22 +125,22 @@ function gujarat() {
             return resp.json();
         })
         .then(function (data) {
-            let gujaratUpdate = data.statewise[7].lastupdatedtime;
+            let gujaratUpdate = data.statewise[10].lastupdatedtime;
             document.getElementById('gujaratUpdate').innerHTML = gujaratUpdate;
 
-            let gujaratState = data.statewise[7].state;
+            let gujaratState = data.statewise[10].state;
             document.getElementById('gujaratState').innerHTML = gujaratState;
 
-            let gujaratActive = data.statewise[7].active;
+            let gujaratActive = data.statewise[10].active;
             document.getElementById('gujaratActive').innerHTML = gujaratActive;
 
-            let gujaratConfirmed = data.statewise[7].confirmed;
+            let gujaratConfirmed = data.statewise[10].confirmed;
             document.getElementById('gujaratConfirmed').innerHTML = gujaratConfirmed;
 
-            let gujaratRecovered = data.statewise[7].recovered;
+            let gujaratRecovered = data.statewise[10].recovered;
             document.getElementById('gujaratRecovered').innerHTML = gujaratRecovered;
 
-            let gujaratDeceased = data.statewise[7].deaths;
+            let gujaratDeceased = data.statewise[10].deaths;
             document.getElementById('gujaratDeceased').innerHTML = gujaratDeceased;
 
         })
@@ -218,22 +218,22 @@ function ap() {
             return resp.json();
         })
         .then(function (data) {
-            let apUpdate = data.statewise[5].lastupdatedtime;
+            let apUpdate = data.statewise[3].lastupdatedtime;
             document.getElementById('apUpdate').innerHTML = apUpdate;
 
-            let apState = data.statewise[5].state;
+            let apState = data.statewise[3].state;
             document.getElementById('apState').innerHTML = apState;
 
-            let apActive = data.statewise[5].active;
+            let apActive = data.statewise[3].active;
             document.getElementById('apActive').innerHTML = apActive;
 
-            let apConfirmed = data.statewise[5].confirmed;
+            let apConfirmed = data.statewise[3].confirmed;
             document.getElementById('apConfirmed').innerHTML = apConfirmed;
 
-            let apRecovered = data.statewise[5].recovered;
+            let apRecovered = data.statewise[3].recovered;
             document.getElementById('apRecovered').innerHTML = apRecovered;
 
-            let apDeceased = data.statewise[5].deaths;
+            let apDeceased = data.statewise[3].deaths;
             document.getElementById('apDeceased').innerHTML = apDeceased;
 
         })
@@ -248,22 +248,22 @@ function wb() {
             return resp.json();
         })
         .then(function (data) {
-            let wbUpdate = data.statewise[8].lastupdatedtime;
+            let wbUpdate = data.statewise[7].lastupdatedtime;
             document.getElementById('wbUpdate').innerHTML = wbUpdate;
 
-            let wbState = data.statewise[8].state;
+            let wbState = data.statewise[7].state;
             document.getElementById('wbState').innerHTML = wbState;
 
-            let wbActive = data.statewise[8].active;
+            let wbActive = data.statewise[7].active;
             document.getElementById('wbActive').innerHTML = wbActive;
 
-            let wbConfirmed = data.statewise[8].confirmed;
+            let wbConfirmed = data.statewise[7].confirmed;
             document.getElementById('wbConfirmed').innerHTML = wbConfirmed;
 
-            let wbRecovered = data.statewise[8].recovered;
+            let wbRecovered = data.statewise[7].recovered;
             document.getElementById('wbRecovered').innerHTML = wbRecovered;
 
-            let wbDeceased = data.statewise[8].deaths;
+            let wbDeceased = data.statewise[7].deaths;
             document.getElementById('wbDeceased').innerHTML = wbDeceased;
 
         })
@@ -278,22 +278,22 @@ function rajasthan() {
             return resp.json();
         })
         .then(function (data) {
-            let rajasthanUpdate = data.statewise[10].lastupdatedtime;
+            let rajasthanUpdate = data.statewise[12].lastupdatedtime;
             document.getElementById('rajasthanUpdate').innerHTML = rajasthanUpdate;
 
-            let rajasthanState = data.statewise[10].state;
+            let rajasthanState = data.statewise[12].state;
             document.getElementById('rajasthanState').innerHTML = rajasthanState;
 
-            let rajasthanActive = data.statewise[10].active;
+            let rajasthanActive = data.statewise[12].active;
             document.getElementById('rajasthanActive').innerHTML = rajasthanActive;
 
-            let rajasthanConfirmed = data.statewise[10].confirmed;
+            let rajasthanConfirmed = data.statewise[12].confirmed;
             document.getElementById('rajasthanConfirmed').innerHTML = rajasthanConfirmed;
 
-            let rajasthanRecovered = data.statewise[10].recovered;
+            let rajasthanRecovered = data.statewise[12].recovered;
             document.getElementById('rajasthanRecovered').innerHTML = rajasthanRecovered;
 
-            let rajasthanDeceased = data.statewise[10].deaths;
+            let rajasthanDeceased = data.statewise[12].deaths;
             document.getElementById('rajasthanDeceased').innerHTML = rajasthanDeceased;
 
         })
@@ -308,22 +308,22 @@ function haryana() {
             return resp.json();
         })
         .then(function (data) {
-            let haryanaUpdate = data.statewise[12].lastupdatedtime;
+            let haryanaUpdate = data.statewise[14].lastupdatedtime;
             document.getElementById('haryanaUpdate').innerHTML = haryanaUpdate;
 
-            let haryanaState = data.statewise[12].state;
+            let haryanaState = data.statewise[14].state;
             document.getElementById('haryanaState').innerHTML = haryanaState;
 
-            let haryanaActive = data.statewise[12].active;
+            let haryanaActive = data.statewise[14].active;
             document.getElementById('haryanaActive').innerHTML = haryanaActive;
 
-            let haryanaConfirmed = data.statewise[12].confirmed;
+            let haryanaConfirmed = data.statewise[14].confirmed;
             document.getElementById('haryanaConfirmed').innerHTML = haryanaConfirmed;
 
-            let haryanaRecovered = data.statewise[12].recovered;
+            let haryanaRecovered = data.statewise[14].recovered;
             document.getElementById('haryanaRecovered').innerHTML = haryanaRecovered;
 
-            let haryanaDeceased = data.statewise[12].deaths;
+            let haryanaDeceased = data.statewise[14].deaths;
             document.getElementById('haryanaDeceased').innerHTML = haryanaDeceased;
 
         })
@@ -338,22 +338,22 @@ function bihar() {
             return resp.json();
         })
         .then(function (data) {
-            let biharUpdate = data.statewise[11].lastupdatedtime;
+            let biharUpdate = data.statewise[8].lastupdatedtime;
             document.getElementById('biharUpdate').innerHTML = biharUpdate;
 
-            let biharState = data.statewise[11].state;
+            let biharState = data.statewise[8].state;
             document.getElementById('biharState').innerHTML = biharState;
 
-            let biharActive = data.statewise[11].active;
+            let biharActive = data.statewise[8].active;
             document.getElementById('biharActive').innerHTML = biharActive;
 
-            let biharConfirmed = data.statewise[11].confirmed;
+            let biharConfirmed = data.statewise[8].confirmed;
             document.getElementById('biharConfirmed').innerHTML = biharConfirmed;
 
-            let biharRecovered = data.statewise[11].recovered;
+            let biharRecovered = data.statewise[8].recovered;
             document.getElementById('biharRecovered').innerHTML = biharRecovered;
 
-            let biharDeceased = data.statewise[11].deaths;
+            let biharDeceased = data.statewise[8].deaths;
             document.getElementById('biharDeceased').innerHTML = biharDeceased;
 
         })
@@ -368,22 +368,22 @@ function mp() {
             return resp.json();
         })
         .then(function (data) {
-            let mpUpdate = data.statewise[14].lastupdatedtime;
+            let mpUpdate = data.statewise[15].lastupdatedtime;
             document.getElementById('mpUpdate').innerHTML = mpUpdate;
 
-            let mpState = data.statewise[14].state;
+            let mpState = data.statewise[15].state;
             document.getElementById('mpState').innerHTML = mpState;
 
-            let mpActive = data.statewise[14].active;
+            let mpActive = data.statewise[15].active;
             document.getElementById('mpActive').innerHTML = mpActive;
 
-            let mpConfirmed = data.statewise[14].confirmed;
+            let mpConfirmed = data.statewise[15].confirmed;
             document.getElementById('mpConfirmed').innerHTML = mpConfirmed;
 
-            let mpRecovered = data.statewise[14].recovered;
+            let mpRecovered = data.statewise[15].recovered;
             document.getElementById('mpRecovered').innerHTML = mpRecovered;
 
-            let mpDeceased = data.statewise[14].deaths;
+            let mpDeceased = data.statewise[15].deaths;
             document.getElementById('mpDeceased').innerHTML = mpDeceased;
 
         })
@@ -398,22 +398,22 @@ function assam() {
             return resp.json();
         })
         .then(function (data) {
-            let assamUpdate = data.statewise[13].lastupdatedtime;
+            let assamUpdate = data.statewise[11].lastupdatedtime;
             document.getElementById('assamUpdate').innerHTML = assamUpdate;
 
-            let assamState = data.statewise[13].state;
+            let assamState = data.statewise[11].state;
             document.getElementById('assamState').innerHTML = assamState;
 
-            let assamActive = data.statewise[13].active;
+            let assamActive = data.statewise[11].active;
             document.getElementById('assamActive').innerHTML = assamActive;
 
-            let assamConfirmed = data.statewise[13].confirmed;
+            let assamConfirmed = data.statewise[11].confirmed;
             document.getElementById('assamConfirmed').innerHTML = assamConfirmed;
 
-            let assamRecovered = data.statewise[13].recovered;
+            let assamRecovered = data.statewise[11].recovered;
             document.getElementById('assamRecovered').innerHTML = assamRecovered;
 
-            let assamDeceased = data.statewise[13].deaths;
+            let assamDeceased = data.statewise[11].deaths;
             document.getElementById('assamDeceased').innerHTML = assamDeceased;
 
         })
@@ -428,22 +428,22 @@ function odisha() {
             return resp.json();
         })
         .then(function (data) {
-            let odishaUpdate = data.statewise[15].lastupdatedtime;
+            let odishaUpdate = data.statewise[13].lastupdatedtime;
             document.getElementById('odishaUpdate').innerHTML = odishaUpdate;
 
-            let odishaState = data.statewise[15].state;
+            let odishaState = data.statewise[13].state;
             document.getElementById('odishaState').innerHTML = odishaState;
 
-            let odishaActive = data.statewise[15].active;
+            let odishaActive = data.statewise[13].active;
             document.getElementById('odishaActive').innerHTML = odishaActive;
 
-            let odishaConfirmed = data.statewise[15].confirmed;
+            let odishaConfirmed = data.statewise[13].confirmed;
             document.getElementById('odishaConfirmed').innerHTML = odishaConfirmed;
 
-            let odishaRecovered = data.statewise[15].recovered;
+            let odishaRecovered = data.statewise[13].recovered;
             document.getElementById('odishaRecovered').innerHTML = odishaRecovered;
 
-            let odishaDeceased = data.statewise[15].deaths;
+            let odishaDeceased = data.statewise[13].deaths;
             document.getElementById('odishaDeceased').innerHTML = odishaDeceased;
 
         })
@@ -458,22 +458,22 @@ function jk() {
             return resp.json();
         })
         .then(function (data) {
-            let jkUpdate = data.statewise[16].lastupdatedtime;
+            let jkUpdate = data.statewise[18].lastupdatedtime;
             document.getElementById('jkUpdate').innerHTML = jkUpdate;
 
-            let jkState = data.statewise[16].state;
+            let jkState = data.statewise[18].state;
             document.getElementById('jkState').innerHTML = jkState;
 
-            let jkActive = data.statewise[16].active;
+            let jkActive = data.statewise[18].active;
             document.getElementById('jkActive').innerHTML = jkActive;
 
-            let jkConfirmed = data.statewise[16].confirmed;
+            let jkConfirmed = data.statewise[18].confirmed;
             document.getElementById('jkConfirmed').innerHTML = jkConfirmed;
 
-            let jkRecovered = data.statewise[16].recovered;
+            let jkRecovered = data.statewise[18].recovered;
             document.getElementById('jkRecovered').innerHTML = jkRecovered;
 
-            let jkDeceased = data.statewise[16].deaths;
+            let jkDeceased = data.statewise[18].deaths;
             document.getElementById('jkDeceased').innerHTML = jkDeceased;
 
         })
@@ -488,22 +488,22 @@ function punjab() {
             return resp.json();
         })
         .then(function (data) {
-            let punjabUpdate = data.statewise[18].lastupdatedtime;
+            let punjabUpdate = data.statewise[17].lastupdatedtime;
             document.getElementById('punjabUpdate').innerHTML = punjabUpdate;
 
-            let punjabState = data.statewise[18].state;
+            let punjabState = data.statewise[17].state;
             document.getElementById('punjabState').innerHTML = punjabState;
 
-            let punjabActive = data.statewise[18].active;
+            let punjabActive = data.statewise[17].active;
             document.getElementById('punjabActive').innerHTML = punjabActive;
 
-            let punjabConfirmed = data.statewise[18].confirmed;
+            let punjabConfirmed = data.statewise[17].confirmed;
             document.getElementById('punjabConfirmed').innerHTML = punjabConfirmed;
 
-            let punjabRecovered = data.statewise[18].recovered;
+            let punjabRecovered = data.statewise[17].recovered;
             document.getElementById('punjabRecovered').innerHTML = punjabRecovered;
 
-            let punjabDeceased = data.statewise[18].deaths;
+            let punjabDeceased = data.statewise[17].deaths;
             document.getElementById('punjabDeceased').innerHTML = punjabDeceased;
 
         })
@@ -518,22 +518,22 @@ function kerala() {
             return resp.json();
         })
         .then(function (data) {
-            let keralaUpdate = data.statewise[17].lastupdatedtime;
+            let keralaUpdate = data.statewise[16].lastupdatedtime;
             document.getElementById('keralaUpdate').innerHTML = keralaUpdate;
 
-            let keralaState = data.statewise[17].state;
+            let keralaState = data.statewise[16].state;
             document.getElementById('keralaState').innerHTML = keralaState;
 
-            let keralaActive = data.statewise[17].active;
+            let keralaActive = data.statewise[16].active;
             document.getElementById('keralaActive').innerHTML = keralaActive;
 
-            let keralaConfirmed = data.statewise[17].confirmed;
+            let keralaConfirmed = data.statewise[16].confirmed;
             document.getElementById('keralaConfirmed').innerHTML = keralaConfirmed;
 
-            let keralaRecovered = data.statewise[17].recovered;
+            let keralaRecovered = data.statewise[16].recovered;
             document.getElementById('keralaRecovered').innerHTML = keralaRecovered;
 
-            let keralaDeceased = data.statewise[17].deaths;
+            let keralaDeceased = data.statewise[16].deaths;
             document.getElementById('keralaDeceased').innerHTML = keralaDeceased;
 
         })
@@ -788,22 +788,22 @@ function ladakh() {
             return resp.json();
         })
         .then(function (data) {
-            let ladakhUpdate = data.statewise[27].lastupdatedtime;
+            let ladakhUpdate = data.statewise[30].lastupdatedtime;
             document.getElementById('ladakhUpdate').innerHTML = ladakhUpdate;
 
-            let ladakhState = data.statewise[27].state;
+            let ladakhState = data.statewise[30].state;
             document.getElementById('ladakhState').innerHTML = ladakhState;
 
-            let ladakhActive = data.statewise[27].active;
+            let ladakhActive = data.statewise[30].active;
             document.getElementById('ladakhActive').innerHTML = ladakhActive;
 
-            let ladakhConfirmed = data.statewise[27].confirmed;
+            let ladakhConfirmed = data.statewise[30].confirmed;
             document.getElementById('ladakhConfirmed').innerHTML = ladakhConfirmed;
 
-            let ladakhRecovered = data.statewise[27].recovered;
+            let ladakhRecovered = data.statewise[30].recovered;
             document.getElementById('ladakhRecovered').innerHTML = ladakhRecovered;
 
-            let ladakhDeceased = data.statewise[27].deaths;
+            let ladakhDeceased = data.statewise[30].deaths;
             document.getElementById('ladakhDeceased').innerHTML = ladakhDeceased;
 
         })
@@ -818,22 +818,22 @@ function nagaland() {
             return resp.json();
         })
         .then(function (data) {
-            let nagalandUpdate = data.statewise[28].lastupdatedtime;
+            let nagalandUpdate = data.statewise[27].lastupdatedtime;
             document.getElementById('nagalandUpdate').innerHTML = nagalandUpdate;
 
-            let nagalandState = data.statewise[28].state;
+            let nagalandState = data.statewise[27].state;
             document.getElementById('nagalandState').innerHTML = nagalandState;
 
-            let nagalandActive = data.statewise[28].active;
+            let nagalandActive = data.statewise[27].active;
             document.getElementById('nagalandActive').innerHTML = nagalandActive;
 
-            let nagalandConfirmed = data.statewise[28].confirmed;
+            let nagalandConfirmed = data.statewise[27].confirmed;
             document.getElementById('nagalandConfirmed').innerHTML = nagalandConfirmed;
 
-            let nagalandRecovered = data.statewise[28].recovered;
+            let nagalandRecovered = data.statewise[27].recovered;
             document.getElementById('nagalandRecovered').innerHTML = nagalandRecovered;
 
-            let nagalandDeceased = data.statewise[28].deaths;
+            let nagalandDeceased = data.statewise[27].deaths;
             document.getElementById('nagalandDeceased').innerHTML = nagalandDeceased;
 
         })
@@ -848,22 +848,22 @@ function chandigarh() {
             return resp.json();
         })
         .then(function (data) {
-            let chandigarhUpdate = data.statewise[30].lastupdatedtime;
+            let chandigarhUpdate = data.statewise[31].lastupdatedtime;
             document.getElementById('chandigarhUpdate').innerHTML = chandigarhUpdate;
 
-            let chandigarhState = data.statewise[30].state;
+            let chandigarhState = data.statewise[31].state;
             document.getElementById('chandigarhState').innerHTML = chandigarhState;
 
-            let chandigarhActive = data.statewise[30].active;
+            let chandigarhActive = data.statewise[31].active;
             document.getElementById('chandigarhActive').innerHTML = chandigarhActive;
 
-            let chandigarhConfirmed = data.statewise[30].confirmed;
+            let chandigarhConfirmed = data.statewise[31].confirmed;
             document.getElementById('chandigarhConfirmed').innerHTML = chandigarhConfirmed;
 
-            let chandigarhRecovered = data.statewise[30].recovered;
+            let chandigarhRecovered = data.statewise[31].recovered;
             document.getElementById('chandigarhRecovered').innerHTML = chandigarhRecovered;
 
-            let chandigarhDeceased = data.statewise[30].deaths;
+            let chandigarhDeceased = data.statewise[31].deaths;
             document.getElementById('chandigarhDeceased').innerHTML = chandigarhDeceased;
 
         })
@@ -878,22 +878,22 @@ function dn() {
             return resp.json();
         })
         .then(function (data) {
-            let dnUpdate = data.statewise[31].lastupdatedtime;
+            let dnUpdate = data.statewise[32].lastupdatedtime;
             document.getElementById('dnUpdate').innerHTML = dnUpdate;
 
-            let dnState = data.statewise[31].state;
+            let dnState = data.statewise[32].state;
             document.getElementById('dnState').innerHTML = dnState;
 
-            let dnActive = data.statewise[31].active;
+            let dnActive = data.statewise[32].active;
             document.getElementById('dnActive').innerHTML = dnActive;
 
-            let dnConfirmed = data.statewise[31].confirmed;
+            let dnConfirmed = data.statewise[32].confirmed;
             document.getElementById('dnConfirmed').innerHTML = dnConfirmed;
 
-            let dnRecovered = data.statewise[31].recovered;
+            let dnRecovered = data.statewise[32].recovered;
             document.getElementById('dnRecovered').innerHTML = dnRecovered;
 
-            let dnDeceased = data.statewise[31].deaths;
+            let dnDeceased = data.statewise[32].deaths;
             document.getElementById('dnDeceased').innerHTML = dnDeceased;
 
         })
@@ -908,22 +908,22 @@ function ar() {
             return resp.json();
         })
         .then(function (data) {
-            let arUpdate = data.statewise[29].lastupdatedtime;
+            let arUpdate = data.statewise[28].lastupdatedtime;
             document.getElementById('arUpdate').innerHTML = arUpdate;
 
-            let arState = data.statewise[29].state;
+            let arState = data.statewise[28].state;
             document.getElementById('arState').innerHTML = arState;
 
-            let arActive = data.statewise[29].active;
+            let arActive = data.statewise[28].active;
             document.getElementById('arActive').innerHTML = arActive;
 
-            let arConfirmed = data.statewise[29].confirmed;
+            let arConfirmed = data.statewise[28].confirmed;
             document.getElementById('arConfirmed').innerHTML = arConfirmed;
 
-            let arRecovered = data.statewise[29].recovered;
+            let arRecovered = data.statewise[28].recovered;
             document.getElementById('arRecovered').innerHTML = arRecovered;
 
-            let arDeceased = data.statewise[29].deaths;
+            let arDeceased = data.statewise[28].deaths;
             document.getElementById('arDeceased').innerHTML = arDeceased;
 
         })
@@ -938,22 +938,22 @@ function meghalaya() {
             return resp.json();
         })
         .then(function (data) {
-            let meghalayaUpdate = data.statewise[32].lastupdatedtime;
+            let meghalayaUpdate = data.statewise[33].lastupdatedtime;
             document.getElementById('meghalayaUpdate').innerHTML = meghalayaUpdate;
 
-            let meghalayaState = data.statewise[32].state;
+            let meghalayaState = data.statewise[33].state;
             document.getElementById('meghalayaState').innerHTML = meghalayaState;
 
-            let meghalayaActive = data.statewise[32].active;
+            let meghalayaActive = data.statewise[33].active;
             document.getElementById('meghalayaActive').innerHTML = meghalayaActive;
 
-            let meghalayaConfirmed = data.statewise[32].confirmed;
+            let meghalayaConfirmed = data.statewise[33].confirmed;
             document.getElementById('meghalayaConfirmed').innerHTML = meghalayaConfirmed;
 
-            let meghalayaRecovered = data.statewise[32].recovered;
+            let meghalayaRecovered = data.statewise[33].recovered;
             document.getElementById('meghalayaRecovered').innerHTML = meghalayaRecovered;
 
-            let meghalayaDeceased = data.statewise[32].deaths;
+            let meghalayaDeceased = data.statewise[33].deaths;
             document.getElementById('meghalayaDeceased').innerHTML = meghalayaDeceased;
 
         })
@@ -968,22 +968,22 @@ function mizoram() {
             return resp.json();
         })
         .then(function (data) {
-            let mizoramUpdate = data.statewise[34].lastupdatedtime;
+            let mizoramUpdate = data.statewise[35].lastupdatedtime;
             document.getElementById('mizoramUpdate').innerHTML = mizoramUpdate;
 
-            let mizoramState = data.statewise[34].state;
+            let mizoramState = data.statewise[35].state;
             document.getElementById('mizoramState').innerHTML = mizoramState;
 
-            let mizoramActive = data.statewise[34].active;
+            let mizoramActive = data.statewise[35].active;
             document.getElementById('mizoramActive').innerHTML = mizoramActive;
 
-            let mizoramConfirmed = data.statewise[34].confirmed;
+            let mizoramConfirmed = data.statewise[35].confirmed;
             document.getElementById('mizoramConfirmed').innerHTML = mizoramConfirmed;
 
-            let mizoramRecovered = data.statewise[34].recovered;
+            let mizoramRecovered = data.statewise[35].recovered;
             document.getElementById('mizoramRecovered').innerHTML = mizoramRecovered;
 
-            let mizoramDeceased = data.statewise[34].deaths;
+            let mizoramDeceased = data.statewise[35].deaths;
             document.getElementById('mizoramDeceased').innerHTML = mizoramDeceased;
 
         })
@@ -998,22 +998,22 @@ function an() {
             return resp.json();
         })
         .then(function (data) {
-            let anUpdate = data.statewise[35].lastupdatedtime;
+            let anUpdate = data.statewise[29].lastupdatedtime;
             document.getElementById('anUpdate').innerHTML = anUpdate;
 
-            let anState = data.statewise[35].state;
+            let anState = data.statewise[29].state;
             document.getElementById('anState').innerHTML = anState;
 
-            let anActive = data.statewise[35].active;
+            let anActive = data.statewise[29].active;
             document.getElementById('anActive').innerHTML = anActive;
 
-            let anConfirmed = data.statewise[35].confirmed;
+            let anConfirmed = data.statewise[29].confirmed;
             document.getElementById('anConfirmed').innerHTML = anConfirmed;
 
-            let anRecovered = data.statewise[35].recovered;
+            let anRecovered = data.statewise[29].recovered;
             document.getElementById('anRecovered').innerHTML = anRecovered;
 
-            let anDeceased = data.statewise[35].deaths;
+            let anDeceased = data.statewise[29].deaths;
             document.getElementById('anDeceased').innerHTML = anDeceased;
 
         })
@@ -1028,22 +1028,22 @@ function sikkim() {
             return resp.json();
         })
         .then(function (data) {
-            let sikkimUpdate = data.statewise[33].lastupdatedtime;
+            let sikkimUpdate = data.statewise[34].lastupdatedtime;
             document.getElementById('sikkimUpdate').innerHTML = sikkimUpdate;
 
-            let sikkimState = data.statewise[33].state;
+            let sikkimState = data.statewise[34].state;
             document.getElementById('sikkimState').innerHTML = sikkimState;
 
-            let sikkimActive = data.statewise[33].active;
+            let sikkimActive = data.statewise[34].active;
             document.getElementById('sikkimActive').innerHTML = sikkimActive;
 
-            let sikkimConfirmed = data.statewise[33].confirmed;
+            let sikkimConfirmed = data.statewise[34].confirmed;
             document.getElementById('sikkimConfirmed').innerHTML = sikkimConfirmed;
 
-            let sikkimRecovered = data.statewise[33].recovered;
+            let sikkimRecovered = data.statewise[34].recovered;
             document.getElementById('sikkimRecovered').innerHTML = sikkimRecovered;
 
-            let sikkimDeceased = data.statewise[33].deaths;
+            let sikkimDeceased = data.statewise[34].deaths;
             document.getElementById('sikkimDeceased').innerHTML = sikkimDeceased;
 
         })
