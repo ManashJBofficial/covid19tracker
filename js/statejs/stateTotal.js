@@ -890,6 +890,6 @@ function lakshadweep() {
 
         })
         .catch(function () {
-            console.log('error');
+            console.log('errorr');
         });
 }
