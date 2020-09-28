@@ -12,22 +12,26 @@
     <meta name="author" content="Manash Jyoti Baruah">
     <title>COVID-19 Tracker | Lakshadweep</title>
 
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="icon" href="../img/coronavirus.svg" type="image/svg" sizes="16x16">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="../sass/statesStyle.css">
     <link rel="stylesheet" href="../bootstrap-4.5.0/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="../bootstrap-4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../sass/statesStyle.css">
 </head>
 
 <body class="container-cus">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark  nav-cus sticky-top ">
+    <nav class="navbar navbar-expand-lg navbar-dark  nav-cus sticky-top shadow-lg">
         <a class="navbar-brand" href="../index"><img class="logo" src="../img/coronavirus.svg" alt="logo"/>&ensp;
             <span class="head-text">COVID-19 TRACKER</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="nav-toggler-bar" style="color:Dodgerblue;" >
+                <i class="fas fa-bars"></i>
+            </span>
         </button>
 
         <div class="collapse navbar-collapse nav justify-content-stretch text-right" id="navbarSupportedContent">
@@ -38,6 +42,10 @@
                 <li class="nav-item">
                     <a class="nav-link nav-text" href="../world">World</a>
                 </li>
+                <li class="nav-item align-self-center pl-5">
+                    <input id="switch" type="checkbox" name="mode" hidden data-switch-dark aria-hidden/>
+                    <label for="switch" class="switch" aria-hidden></label>
+                </li>
             </ul>
 
         </div>
@@ -45,8 +53,16 @@
 
     <div class="container ">
         <div class="row">
-            <div class="col col-lg-12 py-5">
-
+            <div class="col col-lg-12 ">
+<!-- Search Box-->    
+<div class="row justify-content-center align-items-center">
+            <div class="col-xs-4">
+                <div class="ui-widget py-5 ">
+                    <input id="tags" placeholder="Search any states ..." class="form-control" />
+                </div>
+            </div>
+        </div>
+        <!--Search Box End-->
             <h1 class="banner-text  py-5 text-center">Lakshadweep</h1>
 
             <div class="row text-center  my-5 align-middle">
@@ -70,12 +86,9 @@
                 </div>
             </div>
            
-           
-           
-            
-                <div class="table-responsive ">
-                    <table class="table table-striped table-dark table-bordered text-center">
-                        <thead>
+            <div class="table-responsive ">
+                    <table class="table table-striped table-bordered table-dark text-center ">
+                        <thead class="thead-dark">
                             <tr>
                                 
                                 <th>District</th>
@@ -112,10 +125,7 @@
                         
                         
                             <?php
-                            
-                        //$i++;
-                        
-                        
+                      
                         }
                         ?>
 
@@ -144,7 +154,7 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="page-footer font-small footer-cus">
+    <footer class="page-footer font-small footer-cus mt-5">
         <!-- Footer Elements -->
         <div class="container  ">
 
@@ -194,13 +204,16 @@
     <!-- Footer -->
 
 
-
-    
-    <!-- Latest compiled and minified JavaScript -->
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="../js/statejs/viewDistrictsStates.js"></script>
     <script src="../js/jquery-3.5.1.slim.min.js"></script>  
-    <script src="../bootstrap-4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/searchBar.js"></script>
+    <script src="../bootstrap-4.5.0/js/bootstrap.min.js"></script>  
     <script type="text/javascript" src="../js/statejs/stateTotal.js"></script>
     <script type="text/javascript" src="../js/statejs/appState.js"></script>
+    <script src="../js/mode.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,9 @@
     
     <title>COVID-19 Tracker | World</title>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="icon" href="img/coronavirus.svg" type="image/svg" sizes="16x16">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="sass/statesStyle.css">
@@ -23,12 +26,14 @@
 <body class="container-cus">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark  nav-cus sticky-top ">
+    <nav class="navbar navbar-expand-lg navbar-dark  nav-cus sticky-top shadow-lg">
         <a class="navbar-brand" href="index"><img class="logo" src="img/coronavirus.svg" alt="logo"/>&ensp;
             <span class="head-text">COVID-19 TRACKER</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="nav-toggler-bar" style="color:Dodgerblue;" >
+                <i class="fas fa-bars"></i>
+            </span>
         </button>
 
         <div class="collapse navbar-collapse nav justify-content-stretch text-right" id="navbarSupportedContent">
@@ -38,6 +43,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-text" href="#">World</a>
+                </li>
+                <li class="nav-item align-self-center pl-5">
+                    <input id="switch" type="checkbox" name="mode" hidden data-switch-dark aria-hidden/>
+                    <label for="switch" class="switch" aria-hidden></label>
                 </li>
             </ul>
 
@@ -50,7 +59,9 @@
         <div class="row">
             <div class="col col-lg-12 py-5">
 
-                <h1 class="banner-text  py-5 text-center">World</h1>
+                <h1 class="banner-text  py-5 text-center">
+                <img src="img/world.svg" style="width:50px;height:50px;"/>    
+                World</h1>
                 <?php 
                         $data = file_get_contents('https://coronavirus-19-api.herokuapp.com/countries');
                         $covidData = json_decode($data,true);
@@ -76,11 +87,11 @@
                     </div>
                 </div>
 
-                <!---->
+                
 
                 <div class="table-responsive ">
-                    <table class="table table-striped table-dark table-bordered text-center">
-                        <thead>
+                    <table class="table table-striped table-bordered table-dark text-center ">
+                        <thead class="thead-dark">
                             <tr>
                                 <th class="">Rank</th>
                                 <th class="">Country</th>
@@ -91,7 +102,7 @@
                                 <th class="">Critical</th>
                                 <th class="">Todays Cases</th>
                                 <th class="">Todays Deaths</th>
-                                <th class="">Todays Tests</th>
+                                <th class="">Total Tests</th>
                             </tr>
 
 
@@ -199,6 +210,7 @@
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap-4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/mode.js"></script>
     <script type="text/javascript" src="js/statejs/stateTotal.js"></script>
     <script type="text/javascript" src="js/statejs/appState.js"></script>
 
