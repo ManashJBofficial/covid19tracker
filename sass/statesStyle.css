@@ -1,6 +1,7 @@
 html {
   --background_color_1: #0b132b;
   --navbar_color: #1c2541;
+  --nav_toggler_color: red;
   --background_color_2: #3bb78f;
   --head_text_color: #ffdf01;
   --table_body_background: #0b132b;
@@ -30,7 +31,8 @@ html {
 html[data-theme="light"] {
   --background_color_1: #fdfdfd;
   --navbar_color: #ffffff;
-  --head_text_color: rgb(0, 0, 0);
+  --nav_toggler_color: #ccc;
+  --head_text_color: #ff500a;
   --background_color_2: #fff;
   --table_body_background: #fffde8;
   --table_row_background: #fffde8;
@@ -54,6 +56,16 @@ html[data-theme="light"] {
   --form-control-border: #1c2541;
   --form-control-color: #1c2541;
   --form-control-placeholder: #1c2541;
+}
+
+@font-face {
+  font-family: GENUINE;
+  src: url("../fonts/GENUINE/GENUINE.ttf");
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue/TTF/BebasNeue-Bold.ttf");
 }
 
 @font-face {
@@ -87,7 +99,7 @@ html.transition *:after {
 }
 
 .navbar .navbar-brand .head-text {
-  font-family: Montserrat !important;
+  font-family: "GENUINE" !important;
   font-size: 1.5rem;
   color: var(--head_text_color);
 }
@@ -110,8 +122,8 @@ nav .navbar-nav .nav-item .nav-link:hover {
 }
 
 .logo {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .nav .navbar-nav .nav-item .nav-text {
@@ -128,18 +140,25 @@ nav .navbar-nav .nav-item .nav-link:hover {
   color: var(--table_text);
 }
 
+.table thead tr {
+  border-color: #454d55 !important;
+}
+
 .table tbody {
   font-family: "Roboto", sans-serif;
   background-color: var(--table_body_background);
 }
 
 .table tbody tr {
-  color: var(--table_text_color);
   background-color: var(--table_row_background);
 }
 
 .table tbody tr:hover {
   color: var(--table_hover);
+}
+
+.table tbody tr td {
+  color: var(--table_text_color);
 }
 
 .container-cus {

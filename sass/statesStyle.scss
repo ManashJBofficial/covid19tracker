@@ -33,7 +33,7 @@ html[data-theme="light"] {
   --background_color_1: #fdfdfd;
   --navbar_color: #ffffff;
   --nav_toggler_color: #ccc;
-  --head_text_color: rgb(0, 0, 0); //#FF500A
+  --head_text_color: #ff500a; //#FF500A
   --background_color_2: #fff;
   --table_body_background: #fffde8;
   --table_row_background: #fffde8;
@@ -69,7 +69,17 @@ $light-bg: #fff;
 $font_family_1: Montserrat;
 $font_family_2: Lato;
 $font_family_3: "Roboto", sans-serif;
+$font_family_4: "BebasNeue";
+$font_family_5: "GENUINE";
 
+@font-face {
+  font-family: GENUINE;
+  src: url("../fonts/GENUINE/GENUINE.ttf");
+}
+@font-face {
+  font-family: BebasNeue;
+  src: url("../fonts/BebasNeue/TTF/BebasNeue-Bold.ttf");
+}
 @font-face {
   font-family: Montserrat;
   src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
@@ -101,7 +111,7 @@ html.transition *:after {
 .navbar {
   .navbar-brand {
     .head-text {
-      font-family: $font_family_1 !important;
+      font-family: $font_family_5 !important;
       font-size: 1.5rem;
       color: var(--head_text_color);
     }
@@ -130,8 +140,8 @@ nav {
 }
 
 .logo {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .nav {
