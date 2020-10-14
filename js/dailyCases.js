@@ -24,7 +24,7 @@ fetch("https://api.covid19india.org/data.json")
         labels: date,
         datasets: [
           {
-            label: "Growth Rate of Daily Confirmed Cases in India",
+            label: "Growth Rate of Daily Confirmed Cases",
             data: dailyconfirmed,
             backgroundColor: "#FF4C4C",
             minBarLength: 10,
@@ -34,7 +34,7 @@ fetch("https://api.covid19india.org/data.json")
             pointRadius: 0,
           },
           {
-            label: "Growth Rate of Daily Recovered Cases in India",
+            label: "Growth Rate of Daily Recovered Cases",
             data: dailyrecovered,
             backgroundColor: "#7FEB45",
             minBarLength: 10,
@@ -44,7 +44,7 @@ fetch("https://api.covid19india.org/data.json")
             pointRadius: 0,
           },
           {
-            label: "Growth Rate of Daily Death Cases in India",
+            label: "Growth Rate of Daily Death Cases",
             data: dailydeceased,
             backgroundColor: "#CCCCCC",
             minBarLength: 10,
