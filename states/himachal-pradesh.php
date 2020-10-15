@@ -12,7 +12,7 @@
     <meta name="author" content="Manash Jyoti Baruah">
     <title>COVID-19 Tracker | Himachal Pradesh</title>
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../jquery/jquery-ui.css">
     <link rel="icon" href="../img/coronavirus.svg" type="image/svg" sizes="16x16">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../bootstrap-4.5.0/css/bootstrap-reboot.min.css">
@@ -208,8 +208,8 @@
     <script type="text/javascript" src="../js/statejs/stateTotal.js"></script>
     <script type="text/javascript" src="../js/statejs/appState.js"></script>
     <script src="../js/mode.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../jquery/jquery-3.5.1.min.js"></script>
+    <script src="../jquery/jquery-ui.min.js"></script>
 </body>
 
 </html>

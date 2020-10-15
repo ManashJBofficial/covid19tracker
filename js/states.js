@@ -856,6 +856,8 @@ function allStates() {
           ).innerHTML = lakshadweepDeceased;
         }
       }
+    }).then(function (data) {
+      document.getElementById("loading").style.display = 'none';
     })
     .catch(function () {
       console.log("error");

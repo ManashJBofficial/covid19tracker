@@ -13,9 +13,9 @@
     
     <title>COVID-19 Tracker | World</title>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css">
     <link rel="icon" href="img/coronavirus.svg" type="image/svg" sizes="16x16">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="sass/statesStyle.css">

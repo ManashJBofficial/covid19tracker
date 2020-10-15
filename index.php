@@ -13,9 +13,12 @@
 
     <title>COVID-19 | CORONA VIRUS TRACKER</title>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css">
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
     <link rel="icon" href="img/coronavirus.svg" type="image/svg" sizes="16x16">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <script src="js/Chart.js"></script>
@@ -25,11 +28,11 @@
     
 </head>
 
-<body>
+<body >
 
+<div id="loading"></div>
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark  nav-cus shadow-lg sticky-top">
+   <nav class="navbar navbar-expand-lg navbar-dark  nav-cus shadow-lg sticky-top">
     
         <a class="navbar-brand" href="#"><img class="logo" src="img/coronavirus.svg" alt="logo" />&ensp;
             <span class="head-text">COVID-19 TRACKER</span></a>
@@ -589,8 +592,7 @@
     </footer>
     <!-- Footer -->
 
-
- 
+  
     
     <script type="text/javascript" src="js/deathChart.js"></script>
     <script type="text/javascript" src="js/recoveredChart.js"></script>
@@ -605,6 +607,8 @@
     <script type="text/javascript" src="js/states.js"></script>
     <script type="text/javascript" src="js/india.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    
+    
 </body>
 
 </html>
