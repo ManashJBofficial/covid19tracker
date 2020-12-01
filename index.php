@@ -495,6 +495,7 @@
                                 <canvas id="totalCases" width="50%"></canvas>
                             </div>
                         </div>
+                        
                         <div class="card bg-dark shadow-lg my-5">
                             <div class="card-body card-chart">
                                 <canvas id="chart" width="50%"></canvas>
@@ -515,6 +516,8 @@
                                 <canvas id="deathData" width="50%"></canvas>
                             </div>
                         </div>
+                        
+                        
 
                     </div>
                 </div>

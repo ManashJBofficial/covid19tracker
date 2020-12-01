@@ -86,9 +86,6 @@
                         <h2><?php echo $deaths; ?></h2><br>
                     </div>
                 </div>
-
-                
-
                 <div class="table-responsive ">
                     <table class="table table-striped table-bordered table-dark text-center ">
                         <thead class="thead-dark">
@@ -127,8 +124,6 @@
                             <td><?php echo $covidData[$i]['todayDeaths']?></td>
                             <td><?php echo $covidData[$i]['totalTests']?></td>
                         </tr>
-
-
                         <?php
                         $i++;
                         

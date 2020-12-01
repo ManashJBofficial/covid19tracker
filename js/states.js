@@ -1,8 +1,11 @@
-function allStates() {
-  fetch("https://api.covid19india.org/data.json")
-    .then(function (resp) {
-      return resp.json();
-    })
+async function allStates() 
+{
+  let url= "https://api.covid19india.org/data.json";
+  let response = await fetch(url);
+  let data = await response.json()
+  return data;
+}
+allStates() 
     .then(function (data) {
       for (let i = 0; i < data.statewise.length; i++) {
         if (data.statewise[i].statecode == "MH") {
@@ -862,4 +865,4 @@ function allStates() {
     .catch(function () {
       console.log("error");
     });
-}
+
