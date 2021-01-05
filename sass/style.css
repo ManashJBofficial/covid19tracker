@@ -24,6 +24,8 @@ html {
   --form-control-border: #ffdf01;
   --form-control-color: #ffdf01;
   --form-control-placeholder: #fff;
+  --map-color: #1c2541;
+  --map-stroke: #fff;
 }
 
 html[data-theme="light"] {
@@ -53,6 +55,8 @@ html[data-theme="light"] {
   --form-control-border: #1c2541;
   --form-control-color: #1c2541;
   --form-control-placeholder: #1c2541;
+  --map-color: #FFFDE9;
+  --map-stroke: #0B132B;
 }
 
 @font-face {
@@ -103,6 +107,8 @@ html.transition *:after {
   z-index: 9999;
 }
 
+/*ToolTip css*/
+/*ToolTip css End*/
 .navbar .navbar-brand .head-text {
   font-family: "GENUINE" !important;
   font-size: 1.5rem;
@@ -327,5 +333,19 @@ input:checked + .switch:active:before {
   .nav-cus {
     height: 100px;
   }
+}
+
+.mapdiv {
+  height: auto;
+  width: auto;
+  background-color: var(--background_color_1);
+}
+
+.mapdiv path {
+  fill: var(--map-color);
+  stroke: var(--map-stroke);
+  stroke-width: 2px;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

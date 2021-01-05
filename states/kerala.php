@@ -41,6 +41,20 @@
                 <li class="nav-item">
                     <a class="nav-link nav-text" href="../world">World</a>
                 </li>
+                <li class="nav-item ">
+                    <!-- dropdown start -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PREDICTION
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item nav-text" href="../prediction/india-prediction">INDIA</a>                       
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item nav-text" href="../prediction/assam-prediction">ASSAM</a>
+                        </div>
+                    </li>
+                    <!-- dropdown end -->
+                </li>
                 <li class="nav-item align-self-center pl-5">
                     <input id="switch" type="checkbox" name="mode" hidden data-switch-dark aria-hidden/>
                     <label for="switch" class="switch" aria-hidden></label>

@@ -750,6 +750,8 @@ allStates()
 
           let anActive = data.statewise[i].active;
           document.getElementById("anActive").innerHTML = anActive;
+          
+          
 
           let anConfirmed = data.statewise[i].confirmed;
           document.getElementById("anConfirmed").innerHTML = anConfirmed;

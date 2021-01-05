@@ -25,12 +25,15 @@ html {
   --form-control-border: #ffdf01;
   --form-control-color: #ffdf01;
   --form-control-placeholder: #fff;
+
+  --map-color: #1c2541;
+  --map-stroke: #fff;
 }
 
 html[data-theme="light"] {
   --background_color_1: #fdfdfd;
   --navbar_color: #ffffff;
-  --head_text_color: #ff500a; //rgb(0, 0, 0);
+  --head_text_color: #ff500a;
   --background_color_2: #fff;
   --table_body_background: #fffde8;
   --table_row_background: #fffde8;
@@ -55,6 +58,9 @@ html[data-theme="light"] {
   --form-control-border: #1c2541;
   --form-control-color: #1c2541;
   --form-control-placeholder: #1c2541;
+
+  --map-color: #FFFDE9;
+  --map-stroke: #0B132B;
 }
 
 $switch-thumb: grey;
@@ -65,7 +71,8 @@ $light-bg: #fff;
 
 $font_family_1: Montserrat;
 $font_family_2: Lato;
-$font_family_3: "Roboto", sans-serif;
+$font_family_3: "Roboto",
+sans-serif;
 $font_family_4: "BebasNeue";
 $font_family_5: "GENUINE";
 
@@ -73,10 +80,12 @@ $font_family_5: "GENUINE";
   font-family: GENUINE;
   src: url("../fonts/GENUINE/GENUINE.ttf");
 }
+
 @font-face {
   font-family: BebasNeue;
   src: url("../fonts/BebasNeue/TTF/BebasNeue-Bold.ttf");
 }
+
 @font-face {
   font-family: Montserrat;
   src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
@@ -113,6 +122,10 @@ html.transition *:after {
   z-index: 9999;
 }
 
+/*ToolTip css*/
+
+
+/*ToolTip css End*/
 .navbar {
   .navbar-brand {
     .head-text {
@@ -168,12 +181,14 @@ nav {
 
 .table {
   color: var(--table_text);
+
   tbody {
     font-family: $font_family_3;
     background-color: var(--table_body_background);
 
     tr {
       background-color: var(--table_row_background);
+
       &:hover {
         color: var(--table_hover);
       }
@@ -298,7 +313,7 @@ nav {
   }
 }
 
-input:checked + .switch {
+input:checked+.switch {
   background: $switch-track--active;
 
   &:before {
@@ -318,6 +333,7 @@ input:checked + .switch {
     }
   }
 }
+
 /*Toggle Button ends*/
 
 @media (max-width: 480px) {
@@ -333,5 +349,20 @@ input:checked + .switch {
 @media (min-width: 1500px) {
   .nav-cus {
     height: 100px;
+  }
+}
+
+
+.mapdiv {
+  height: auto;
+  width: auto;
+  background-color: var(--background_color_1);
+
+  path {
+    fill: var(--map-color);
+    stroke: var(--map-stroke);
+    stroke-width: 2px;
+    transition: fill 0.3s;
+
   }
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+</head>
+<body>
+<h1>Prediction of Confirm cases</h1>
+<h3>India Confirmed</h3>
+
+<div id="con"></div>
+<div id="date"></div>
+
+
+</body>
+<script>
+async function x() 
+{
+  let url= "https://api.covid19api.com/country/india";
+  let response = await fetch(url);
+  let data = await response.json()
+  return data;
+}
+
+x() 
+        .then(function (data) {
+  let n=data.length;
+  let i=1;
+  while(i<n){
+    for(let i=0;i<n;i++){
+    let a = data[i].Confirmed;
+      document.getElementById('con').innerHTML = a;     
+    let b = data[i].Date;
+      document.getElementById('date').innerHTML = b.substring(0,10);
+  }
+  }
+  
+            
+        })
+        .catch(function () {
+            console.log('error');
+        });
+
+</script>
+</html>
