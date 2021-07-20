@@ -55,8 +55,8 @@ html[data-theme="light"] {
   --form-control-border: #1c2541;
   --form-control-color: #1c2541;
   --form-control-placeholder: #1c2541;
-  --map-color: #FFFDE9;
-  --map-stroke: #0B132B;
+  --map-color: #fffde9;
+  --map-stroke: #0b132b;
 }
 
 @font-face {

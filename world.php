@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="CORONA TRACKER, CORONA-VIRUS TRACKER, COVID-19 TRACKER, INDIA COVID-19 CORONA TRACKER, INDIA, WORLD, STATEWISE, DISTRICTWISE,covid, covid19, covid-19, covid19india, coronavirus, corona, india, virus, pandemic, disease, carona, karona, korona ">
     <meta name="author" content="Manash Jyoti Baruah">
-    
+
     <title>COVID-19 Tracker | World</title>
 
     <script src="jquery/jquery-3.5.1.min.js"></script>
@@ -27,11 +27,11 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark  nav-cus sticky-top shadow-lg">
-        <a class="navbar-brand" href="index"><img class="logo" src="img/coronavirus.svg" alt="logo"/>&ensp;
+        <a class="navbar-brand" href="index"><img class="logo" src="img/coronavirus.svg" alt="logo" />&ensp;
             <span class="head-text">COVID-19 TRACKER</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="nav-toggler-bar" style="color:Dodgerblue;" >
+            <span class="nav-toggler-bar" style="color:Dodgerblue;">
                 <i class="fas fa-bars"></i>
             </span>
         </button>
@@ -44,22 +44,9 @@
                 <li class="nav-item">
                     <a class="nav-link nav-text" href="#">World</a>
                 </li>
-                <li class="nav-item ">
-                    <!-- dropdown start -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PREDICTION
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item nav-text" href="prediction/india-prediction">INDIA</a>                       
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item nav-text" href="prediction/assam-prediction">ASSAM</a>
-                        </div>
-                    </li>
-                    <!-- dropdown end -->
-                </li>
+
                 <li class="nav-item align-self-center pl-5">
-                    <input id="switch" type="checkbox" name="mode" hidden data-switch-dark aria-hidden/>
+                    <input id="switch" type="checkbox" name="mode" hidden data-switch-dark aria-hidden />
                     <label for="switch" class="switch" aria-hidden></label>
                 </li>
             </ul>
@@ -74,8 +61,9 @@
             <div class="col col-lg-12 py-5">
 
                 <h1 class="banner-text  py-5 text-center">
-                <img src="img/world.svg" style="width:50px;height:50px;"/>    
-                World</h1>
+                    <img src="img/world.svg" style="width:50px;height:50px;" />
+                    World
+                </h1>
                 <?php 
                         $data = file_get_contents('https://coronavirus-19-api.herokuapp.com/countries');
                         $covidData = json_decode($data,true);

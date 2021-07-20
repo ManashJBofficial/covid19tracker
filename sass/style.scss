@@ -59,8 +59,8 @@ html[data-theme="light"] {
   --form-control-color: #1c2541;
   --form-control-placeholder: #1c2541;
 
-  --map-color: #FFFDE9;
-  --map-stroke: #0B132B;
+  --map-color: #fffde9;
+  --map-stroke: #0b132b;
 }
 
 $switch-thumb: grey;
@@ -71,8 +71,7 @@ $light-bg: #fff;
 
 $font_family_1: Montserrat;
 $font_family_2: Lato;
-$font_family_3: "Roboto",
-sans-serif;
+$font_family_3: "Roboto", sans-serif;
 $font_family_4: "BebasNeue";
 $font_family_5: "GENUINE";
 
@@ -123,7 +122,6 @@ html.transition *:after {
 }
 
 /*ToolTip css*/
-
 
 /*ToolTip css End*/
 .navbar {
@@ -313,7 +311,7 @@ nav {
   }
 }
 
-input:checked+.switch {
+input:checked + .switch {
   background: $switch-track--active;
 
   &:before {
@@ -352,7 +350,6 @@ input:checked+.switch {
   }
 }
 
-
 .mapdiv {
   height: auto;
   width: auto;
@@ -363,6 +360,5 @@ input:checked+.switch {
     stroke: var(--map-stroke);
     stroke-width: 2px;
     transition: fill 0.3s;
-
   }
 }

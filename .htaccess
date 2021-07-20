@@ -6,7 +6,7 @@ RewriteRule ^(.*)$ $1.html
 
 DirectoryIndex index.php
 
-ErrorDocument 404 error_page/page-not-found.html
+ErrorDocument 404 /covid19tracker/error_page/page-not-found.html
 
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
